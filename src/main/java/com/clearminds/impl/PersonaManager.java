@@ -15,7 +15,7 @@ public class PersonaManager {
 	
 	public static String leerPropiedad(String nombrePropiedad) throws FileNotFoundException, IOException {
 		Properties p = new Properties();
-		p.load(new FileReader("D:\\tallerSemillero\\herencia\\config.properties"));
+		p.load(new FileReader("./config.properties"));
 		if(p.getProperty(nombrePropiedad)!=null) {
 			return p.getProperty(nombrePropiedad);
 		}
